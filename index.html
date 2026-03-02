@@ -3,98 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riscos de Ativos</title>
+    <title>Riscos de Ativos — UMC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="htitulos" class="sessao">
-        <h1 id="ptitulo" class="titulo">Identificação dos Riscos de Ativos</h1>
-        <h3 id="psubtitulo" class="subtitulo"><strong>Identificando e analisando áreas de riscos dos ativos da UMC</strong></h3>
-        <br><br>
-        <h3>Este site foi criado para demonstrar algumas áreas de risco dentro da Universidade de Mogi das Cruzes, a UMC e o que pode ser afetado.</h3>
-    </section>
-    
-    <section id="ativos" class="sessao">
 
-        <div id="lab-info" class="divisao">
-
-            <h2 id="stitulo" class="titulo">Laboratório de informática</h2>
-
-            <div id="risco" class="divisao">
-                <h4 id="ssubtitulo" class="subtitulo">Qual o risco?</h4>
-                <p id="pparagrafo" class="paragrafo">Acesso não autorizado a informações de outrem.</p>
-            </div>
-
-            <div id="pode-acontecer"class="divisao">
-                <h4 id="ssubtitulo" class="subtitulo">O que pode acontecer?</h4>
-                <p id="pparagrafo" class="paragrafo">Alunos ou invasores podem ter acesso a informações de outros usuários que utilizaram as máquinas anteriormente e esqueceram, por exemplo, o e-mail ou Teams logado.</p>
-            </div>
-
-            <div id="qual-impacto" class="divisao">
-                <h4 id="ssubtitulo" class="subtitulo">Qual impacto isso geraria?</h4>
-                <p id="pparagrafo" class="paragrafo">Exposição de dados sensíveis.</p>
-            </div>
-
-            <div id="principio-afetado" class="divisao">
-                <h3 id="ssubtitulo">Qual princípio da Segurança da informação pode ser afetado?</h3>
-                <p><strong id="pparagrafo" class="paragrafo">Confidencialidade, já que os dados de alguém estariam sujeitos a exposição.</strong></p>
-            </div>
-
+    <header class="hero">
+        <div class="hero-eyebrow">Universidade de Mogi das Cruzes</div>
+        <h1 class="hero-title">Identificação dos<br>Riscos de Ativos</h1>
+        <p class="hero-description">
+            Identificando e analisando áreas de riscos dos ativos da UMC.<br>
+            Este site foi criado para demonstrar algumas áreas de risco dentro da Universidade de Mogi das Cruzes e o que pode ser afetado.
+        </p>
+        <div class="hero-meta">
+            <span class="meta-tag">Segurança da Informação</span>
+            <span class="meta-tag">3 ativos analisados</span>
         </div>
-        
-        <div id="banco-dados" class="divisao">
+    </header>
 
-            <h2 id="ttitulo" class="titulo">banco de dados de alunos</h2>
+    <main class="container">
 
-            <div id="risco2" class="divisao">
-                <h4 id="tsubtitulo" class="subtitulo">Qual é o risco?</h4>
-                <p id="sparagrafo" class="paragrafo">Vazamento de dados pessoais e acadêmicos dos alunos.</p>
+        <article class="card" id="lab-info">
+            <div class="card-header">
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                </div>
+                <div class="card-label">Ativo 01</div>
             </div>
-            
-            <div id="pode-acontecer2" class="divisao">
-                <h4 id="tsubtitulo" class="subtitulo">O que pode acontecer?</h4>
-                <p id="sparagrafo" class="paragrafo">Invasão externa ao banco de dados (um aluno explorando a vulnerabilidade, por exemplo).</p>
-            </div>
+            <h2 class="card-title">Laboratório de Informática</h2>
+            <p class="card-intro">Laboratório com máquinas compartilhadas entre alunos e professores da instituição.</p>
 
-            <div id="qual-impacto" class="divisao">
-                <h4 id="tsubtitulo" class="subtitulo">Qual impacto isso geraria?</h4>
-                <p id="sparagrafo" class="paragrafo">Danos à reputação da instituição.</p>
-            </div>
-
-            <div id="principio-afetado" class="divisao">
-                <h3 id="tsubtitulo" class="subtitulo">Qual o princípio da Segurança da informação que pode ser afetadoo?</h3>
-                <p id="sparagrafo" class="paragrafo"><strong>Disponibilidade, já que, se o ataque for por ransonware, o banco de dados pode ficar inacessível.</strong></p>
-            </div>
-
-
-        </div>
-
-        <div id="wifi-inst" class="divisao">
-
-            <h2 id="qtitulo" class="titulo">Wi-fi Institucional</h2>
-
-            <div id="risco3" class="divisao">
-                <h4 id="qsubtitulo" class="subtitulo">Qual o risco?</h4>
-                <p id="tparagrafo" class="paragrafo">Ataque de negação de serviço (DoS).</p>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-label">Risco identificado</div>
+                    <div class="info-text">Acesso não autorizado a informações de outrem.</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">O que pode acontecer</div>
+                    <div class="info-text">Alunos ou invasores podem ter acesso a informações de outros usuários que utilizaram as máquinas anteriormente e esqueceram, por exemplo, o e-mail ou Teams logado.</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Impacto</div>
+                    <div class="info-text">Exposição de dados sensíveis.</div>
+                </div>
             </div>
 
-            <div id="pode-acontecer3" class="divisao">
-                <h4 id="qsubtitulo" class="subtitulo">O que pode acontecer?</h4>
-                <p id="tparagrafo" class="paragrafo">Um ataque DoS pode derrubar a rede da instituição</p>
+            <div class="principle-block">
+                <div class="principle-badge">Princípio afetado</div>
+                <div class="principle-name">Confidencialidade</div>
+                <p class="principle-desc">Confidencialidade, já que os dados de alguém estariam sujeitos a exposição.</p>
+            </div>
+        </article>
+
+        <article class="card" id="banco-dados">
+            <div class="card-header">
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+                </div>
+                <div class="card-label">Ativo 02</div>
+            </div>
+            <h2 class="card-title">Banco de Dados de Alunos</h2>
+            <p class="card-intro">Base de dados com informações pessoais e acadêmicas de todos os alunos da UMC.</p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-label">Risco identificado</div>
+                    <div class="info-text">Vazamento de dados pessoais e acadêmicos dos alunos.</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">O que pode acontecer</div>
+                    <div class="info-text">Invasão externa ao banco de dados (um aluno explorando a vulnerabilidade, por exemplo).</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Impacto</div>
+                    <div class="info-text">Danos à reputação da instituição.</div>
+                </div>
             </div>
 
-            <div id="qual-impacto3" class="divisao">
-                <h4 id="qsubtitulo" class="subtitulo">Qual impacto isso geraria?</h4>
-                <p id="tparagrafo" class="paragrafo">Interrupção de atividades acadêmicas que dependem do wi-fi, como um aluno ou professor utilizando um notebook para realização de tais.</p>
+            <div class="principle-block">
+                <div class="principle-badge">Princípio afetado</div>
+                <div class="principle-name">Disponibilidade</div>
+                <p class="principle-desc">Disponibilidade, já que, se o ataque for por ransomware, o banco de dados pode ficar inacessível.</p>
+            </div>
+        </article>
+
+        <article class="card" id="wifi-inst">
+            <div class="card-header">
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="currentColor"/></svg>
+                </div>
+                <div class="card-label">Ativo 03</div>
+            </div>
+            <h2 class="card-title">Wi-Fi Institucional</h2>
+            <p class="card-intro">Rede sem fio utilizada por alunos e professores em todo o campus da UMC.</p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-label">Risco identificado</div>
+                    <div class="info-text">Ataque de negação de serviço (DoS).</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">O que pode acontecer</div>
+                    <div class="info-text">Um ataque DoS pode derrubar a rede da instituição.</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Impacto</div>
+                    <div class="info-text">Interrupção de atividades acadêmicas que dependem do wi-fi, como um aluno ou professor utilizando um notebook para realização de tais.</div>
+                </div>
             </div>
 
-            <div>
-                <h3 id="principio-afetado3" class="subtitulo">Qual o princípio da Segurança da informação que pode ser afetadoo?</h3>
-                <p id="tparagrafo" class="paragrafo"><strong>Disponibilidade, pois a rede pode ficar indisponível. Ficando fora do ar e afetando toda a universidade por período de tempo indeterminado até resolução do problema</strong></p>
+            <div class="principle-block">
+                <div class="principle-badge">Princípio afetado</div>
+                <div class="principle-name">Disponibilidade</div>
+                <p class="principle-desc">Disponibilidade, pois a rede pode ficar indisponível. Ficando fora do ar e afetando toda a universidade por período de tempo indeterminado até resolução do problema.</p>
             </div>
+        </article>
 
-        </div>
+    </main>
 
-    </section>
+    <footer class="footer">
+        <p>Universidade de Mogi das Cruzes &mdash; Segurança da Informação</p>
+    </footer>
+
 </body>
 </html>
