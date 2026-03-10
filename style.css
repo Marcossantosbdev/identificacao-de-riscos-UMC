@@ -236,6 +236,38 @@ body {
     line-height: 1.7;
 }
 
+/*____ Mitigation Block _____________________________________________________ */
+
+.mitigation-block {
+    background: var(--surface-2);
+    border-radius: var(--radius-md);
+    padding: 28px 32px;
+    margin-top: 8px;
+    border: 1px solid var(--border);
+}
+
+.mitigation-badge {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    color: rgb(0, 160, 60);
+}
+
+.mitigation-name {
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+.mitigation-desc {
+    font: 14px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
 /* ─── Per-card themes ────────────────────────────────────────────────────── */
 #lab-info    { border-top-color: var(--red); }
 #banco-dados { border-top-color: var(--accent); }
@@ -377,6 +409,19 @@ body {
     }
 
     .principle-desc {
+        font-size: 13px;
+    }
+
+    .mitigation-block {
+        padding: 20px 18px;
+        border-radius: var(--radius-sm);
+    }
+
+    .mitigation-name {
+        font-size: 1.1rem;
+    }
+
+    .mitigation-desc{
         font-size: 13px;
     }
 

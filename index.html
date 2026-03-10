@@ -16,7 +16,7 @@
         <h1 class="hero-title">Identificação dos<br>Riscos de Ativos</h1>
         <p class="hero-description">
             Identificando e analisando áreas de riscos dos ativos da UMC.<br>
-            Este site foi criado para demonstrar algumas áreas de risco dentro da Universidade de Mogi das Cruzes e o que pode ser afetado. <br>Este trabalho foi desenvolvido por <br><strong>Rúbia Grasiela, Matheus Lucindo, Giovanni Almeida Santos, Marcos V. Bueno e Estrela de Fátima</strong>
+            Este site foi criado para demonstrar algumas áreas de risco dentro da Universidade de Mogi das Cruzes e o que pode ser afetado. <br>Este trabalho foi desenvolvido por <br><strong>Rúbia Grasiela, Matheus Lucindo, Giovanni A. Santos, Marcos V. Bueno e Estrela de Fátima</strong>
         </p>
         <div class="hero-meta">
             <span class="meta-tag">Segurança da Informação</span>
@@ -54,7 +54,13 @@
             <div class="principle-block">
                 <div class="principle-badge">Princípio afetado</div>
                 <div class="principle-name">Confidencialidade</div>
-                <p class="principle-desc">Confidencialidade, já que os dados de alguém estariam sujeitos a exposição, podendo ser vendidos ou vazados para empresas ou pessoas mal intencionadas.</p>
+                <p class="principle-desc">Dados pessoais de alunos (CPFs, notas, endereços) ficam expostos, podendo ser vendidos ou vazados para criminosos.</p>
+            </div>
+
+            <div class="mitigation-block">
+                <div class="mitigation-badge">Medida de mitigação</div>
+                <div class="mitigation-name">Script de Limpeza</div>
+                <p class="mitigation-desc">Um script agendado para rodar diariamente ao final do dia remove sessões de usuário e dados temporários salvos, prevenindo acesso indevido a logs residuais em sistemas compartilhados.</p>
             </div>
         </article>
 
@@ -86,7 +92,13 @@
             <div class="principle-block">
                 <div class="principle-badge">Princípio afetado</div>
                 <div class="principle-name">Disponibilidade</div>
-                <p class="principle-desc">Disponibilidade, já que, se o ataque for por ransomware por exemplo, o banco de dados pode ficar inacessível fazendo com que a universidade não possa verificar informações sobre alunos como, notas, faltas e horas complementares. Também sujeita a manipulação das mesmas informações <strong>(SQL INJECTION)</strong>.</p>
+                <p class="principle-desc">Ataques como ransomware bloqueiam o banco de dados, impedindo acesso a notas, faltas e horas complementares. Também permite manipulação via <strong>SQL Injection</strong>.</p>
+            </div>
+
+            <div class="mitigation-block">
+                <div class="mitigation-badge">Medida de Mitigação</div>
+                <div class="mitigation-name">SIEM com Alertas em Tempo Real</div>
+                <p class="mitigation-desc">Ferramenta SIEM <strong>(Security Information and Event Management)</strong> monitora logs e eventos de segurança em tempo real, detectando múltiplas tentativas de login ou padrões suspeitos — como acessos ao portal da universidade de IPs estranhos — e envia alertas instantâneos para resposta rápida e conformidade.</p>
             </div>
         </article>
 
@@ -118,7 +130,13 @@
             <div class="principle-block">
                 <div class="principle-badge">Princípio afetado</div>
                 <div class="principle-name">Disponibilidade</div>
-                <p class="principle-desc">Disponibilidade, pois a rede pode ficar indisponível. A rede ficando fora do ar afeta toda a comunicação da universidade por período de tempo indeterminado até resolução do problema.</p>
+                <p class="principle-desc">A rede fica indisponível, interrompendo aulas online, acesso a notas e comunicação acadêmica até a resolução.</p>
+            </div>
+
+            <div class="mitigation-block">
+                <div class="mitigation-badge">Medida de Mitigação</div>
+                <div class="mitigation-name">Firewall avançado</div>
+                <div class="mitigation-desc">Firewall equipado com módulo de detecção e prevenção de ataques DoS, bloqueando tráfego excessivo que poderia derrubar portais ou labs da universidade.</div>
             </div>
         </article>
 
